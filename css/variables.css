@@ -1,0 +1,44 @@
+:root {
+  /*PALETA DE COLORES*/
+  --aqua: #00e4f1;
+  --orange: #ff9362;
+  --red: #ff5b74;
+  --lemon: #eff395;
+  --dark-aqua: #01babf;
+
+  --light-lemon: #fcffbf;
+  --light-red: #ffc6ac;
+  --ultralight-red: #fff1ea;
+  
+  --black-text: #171717;
+  --dark-red: #d33048;
+  --dark-lemon: #dfe666;
+
+  /*TIPOGRAFÍAS*/
+  --base-font: "Nunito", sans-serif;
+  --headings-font: "Fredoka", sans-serif;
+  --nombre-font: "TdH", sans-serif;
+
+  /*FONT-SIZES*/
+  --heading1: 3.75rem; /*60px*/
+  --heading2: 3.125rem; /*50px*/
+  --heading3: 2.5rem; /*40px*/
+  --heading4: 1.875rem; /*30px*/
+  --heading5: 1.5rem; /*24px*/
+  --heading6: 1.25rem; /*20px*/
+
+  --text-large: 1rem; /*16px*/
+  --text-medium: 0.9rem; /*14px*/
+  --text-regular: 0.812rem; /*13px*/
+  --text-small: 0.625rem; /*10px*/
+
+  /*ESPACIOS*/
+  --spacing96: 6rem;
+  --spacing64: 4rem;
+  --spacing48: 3rem; /*48px*/
+  --spacing40: 2.5rem; /*40px*/
+  --spacing24: 1.4rem; /*24px*/
+  --spacing16: 1rem; /*16px*/
+  --spacing10: 0.625rem; /*10px*/
+  --spacing8:0.5rem; /*8px*/
+}
