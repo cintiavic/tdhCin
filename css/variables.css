@@ -27,16 +27,19 @@
   --heading5: 1.5rem; /*24px*/
   --heading6: 1.25rem; /*20px*/
 
+  --text-xlarge:  1.123rem;/*18px*/
   --text-large: 1rem; /*16px*/
   --text-medium: 0.9rem; /*14px*/
   --text-regular: 0.812rem; /*13px*/
   --text-small: 0.625rem; /*10px*/
 
   /*ESPACIOS*/
+  --spacing128:8rem;
   --spacing96: 6rem;
   --spacing64: 4rem;
   --spacing48: 3rem; /*48px*/
   --spacing40: 2.5rem; /*40px*/
+  --spacing36: 2.25rem; /*36px*/
   --spacing24: 1.4rem; /*24px*/
   --spacing16: 1rem; /*16px*/
   --spacing10: 0.625rem; /*10px*/
