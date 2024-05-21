@@ -32,6 +32,7 @@
   --text-medium: 0.9rem; /*14px*/
   --text-regular: 0.812rem; /*13px*/
   --text-small: 0.625rem; /*10px*/
+  --text-xsmall: 0.5rem; /*8px*/
 
   /*ESPACIOS*/
   --spacing128:8rem;
