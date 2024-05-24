@@ -418,6 +418,43 @@ footer {
   .conoceTitulo {
     font-size: var(--heading3);
   }
+  .librosSliderTitulo{
+    align-self: center;
+  }
+  .formBusqueda input {
+    
+    font-size: var(--heading5);
+    width: 80vw;
+  }
+
+  .contactanosCampos label{
+    font-size:var(--heading5);
+  }
+
+  .contactanosNomEmail{
+    flex-direction:column;
+    align-items: center;
+  
+  }
+  .contactanosNombre, .contactanosEmail{
+    width:100%;
+  }
+  .contactanosNombre #fnombre{
+    font-size:var(--heading5);
+  }
+  .contactanosEmail #femail{
+    font-size:var(--heading5);
+  }
+  .contactanosMensaje #fmensaje{
+    font-size:var(--heading5);
+  }
+  .contactanosEnviar input{
+    font-size:var(--heading5);
+  }
+  .contactanosEnviar input{
+    padding-left:4rem;
+    padding-right:4rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
