@@ -89,13 +89,21 @@
   .formatoChecks label, .nivelLecturaChecks label 
   {
     font-size: var(--text-medium);
-    padding: 0.4rem;
+    padding: var(--spacing8);
+  }
+
+ .nivelLecturaChecks input{
+    height:var(--text-medium);
+  }
+
+  .formatoChecks input{
+    height: var(--text-medium);
   }
   
-  .formatoChecks>div{
+/*   .formatoChecks>div{
     display: flex;
     flex-wrap: no-wrap;
-  }
+  } */
   
   
   .biblioteca{
@@ -106,7 +114,7 @@
     flex-direction: column;
     align-items:center;
     padding:var(--spacing24);
-    width:70vw;
+    width:80vw;
   }
   
   

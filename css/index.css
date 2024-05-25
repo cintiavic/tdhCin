@@ -442,6 +442,38 @@ footer {
   html {
     font-size: 10px;
   }
+  
+
+.formatoChecks{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.formatoChecks div{
+  display:flex;
+  align-items:baseline;
+}
+
+.nivelLecturaChecks div{
+  padding: var(--spacing8);
+}
+
+.biblioFilters p, .biblioFilters label, .biblioFilters select{
+  font-size:var(--heading6);
+}
+
+.nivelLecturaChecks input,
+.formatoChecks input
+{
+  height:var(--heading6);
+}
+
+#searchInput{
+  font-size:var(--heading6);
+}
+
+
 }
 
 @media screen and (max-width: 640px) {
@@ -505,12 +537,19 @@ footer {
   width:20vw;
 }
 
-}
+/* .formato, .nivelLectura{
+  
+  flex-direction: column;
+  align-items: start;
 
+} */
+
+}
 @media screen and (max-width: 480px) {
   html {
     font-size: 8px;
   }
+
   .bannerTucan {
     max-width: 40%;
   }
@@ -536,6 +575,7 @@ footer {
   .librosSliderTitulo{
     align-self: center;
     text-align:center;
+/*     width:100%; */
   }
   .formBusqueda input {
     
