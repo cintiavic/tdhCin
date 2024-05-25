@@ -23,6 +23,11 @@
 .header_container {
   background-color: var(--aqua);
   /*  margin-bottom:var(--spacing128); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem;
+  
 }
 
 .header_navbar {
@@ -77,40 +82,78 @@
   position: absolute;
 }
 
+.abrir_menu{
+  display:none;
+  background-color: transparent;
+  margin-left:4rem;
+}
+
+.cerrar_menu{
+  display:none;
+  background-color:transparent;
+  margin-right:1.5rem;
+}
+
+.mingcute--menu-fill {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='none'%3E%3Cpath d='M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z'/%3E%3Cpath fill='white' d='M20 17.5a1.5 1.5 0 0 1 .144 2.993L20 20.5H4a1.5 1.5 0 0 1-.144-2.993L4 17.5zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 0 1 0-3zm0-7a1.5 1.5 0 0 1 0 3H4a1.5 1.5 0 1 1 0-3z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.icon-park-solid--close-one {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3Cmask id='ipSCloseOne0'%3E%3Cg fill='none' stroke-linejoin='round' stroke-width='4'%3E%3Cpath fill='%23fff' stroke='%23fff' d='M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z'/%3E%3Cpath stroke='%23000' stroke-linecap='round' d='M29.657 18.343L18.343 29.657m0-11.314l11.314 11.314'/%3E%3C/g%3E%3C/mask%3E%3C/defs%3E%3Cpath fill='white' d='M0 0h48v48H0z' mask='url(%23ipSCloseOne0)'/%3E%3C/svg%3E");
+}
+
 footer {
   margin-top: 0;
 }
 
 .footer {
   background-color: var(--aqua);
-  padding: 30px 40px 30px 40px;
+  padding: var(--spacing36) 0 var(--spacing36) 0;
 }
 
 .footer_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items:start;
   /*  margin: 0 auto; */
 }
 
 .footer_logo img {
-  width: 110px;
+  width: 15vw;
 }
+
+
 
 .footer_menu > p,
 .footer_rrss > p {
-  font-size: 1rem;
+  font-size: var(--heading5);
   font-weight: bolder;
   margin-bottom: 1rem;
 }
 
-.footer_links li a {
-  font-size: var(--text-medium);
-  line-height: 1.5rem;
+.footer_links{
+  display:flex;
+  flex-direction: column;
 }
 
+.footer_links li a {
+  font-size: var(--heading6);
+  line-height:var(--heading3);
+}
 .footer_rrss_iconos {
   display: flex;
   gap: 2rem;
+  font-size: var(--heading4);
 }
 
 .footer > p {
@@ -161,7 +204,7 @@ footer {
   background-image: url("../img/misc/fondo_banner-06.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100vw;
+ /*  width: 100vw; */
   background-color: var(--aqua);
   display: flex;
   justify-content: space-between;
@@ -390,6 +433,63 @@ footer {
   html {
     font-size: 8px;
   }
+  .abrir_menu{
+    display:block;
+  }
+  .cerrar_menu{
+    display:block;
+  }
+  .header_container{
+    justify-content: center;
+    
+  }
+ 
+  .navbar_logo{
+    width:15vw;
+  
+  }
+  .header_navbar{
+    opacity:0;
+    visibility:hidden;
+    position:absolute;
+    padding:1.5rem;
+    top:0;
+    right:0;
+    margin:0;
+    bottom:0;
+    background-color:var(--light-red);
+    display:flex;
+    flex-direction: column;
+    align-items:end;
+    justify-content:flex-start;
+    gap:2rem;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+    
+  }
+
+  .header_navbar.visible{
+    opacity:1;
+    visibility: visible;
+  }
+
+  .navbar_button{
+    margin-right:1.5rem;
+    font-size:var(--heading4);
+  }
+
+  .navbar_links{
+    flex-direction:column;
+    align-items:end;
+  }
+
+  .navbar_links li{
+    font-size:var(--heading4);
+  }
+
+.footer_logo img{
+  width:20vw;
+}
+
 }
 
 @media screen and (max-width: 480px) {
