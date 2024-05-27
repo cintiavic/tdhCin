@@ -614,6 +614,28 @@ footer {
   .contactanosMensaje #fmensaje{
     font-size:var(--heading5);
   }
+
+  .contactanosMotivo p{
+    font-size:var(--heading5);
+  }
+
+  .contactanosMotivo label{
+    font-size:var(--heading5);
+    text-align:center;
+  }
+
+  .styled-select select{
+    font-size: var(--heading5);
+  }
+  
+  .paises option{
+    font-size:var(--heading5);
+  }
+
+  .contactanosPais p{
+    font-size: var(--heading5);
+  }
+
   .contactanosEnviar input{
     font-size:var(--heading5);
   }
