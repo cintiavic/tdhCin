@@ -33,7 +33,7 @@
     font-size: var(--heading5);
   }
   
-  .contactanosCampos {
+  .contactanosCampos, .contactanosMotivoPais, .errorContacto, .exitoContacto{
     margin-top: var(--spacing40);
     display: flex;
     flex-direction: column;
@@ -43,20 +43,22 @@
   
   .contactanosCampos label {
     font-size: var(--heading6);
+    font-weight: 700;
+    padding-bottom: var(--spacing16);
   }
   
   .contactanosCampos input {
     border: none;
     border-radius: 0.5rem;
     padding: var(--spacing10);
-    border: 1px solid #cdcdcd;
+  /*   border: 1px solid #cdcdcd; */
   }
   
   .contactanosCampos textarea {
     border: none;
     border-radius: 0.5rem;
     padding: var(--spacing10);
-    border: 1px solid #cdcdcd;
+    /* border: 1px solid #cdcdcd; */
   }
   
   .contactanosCampos #fnombre,
@@ -64,6 +66,7 @@
   .contactanosCampos #fmensaje{
     font-family: var(--base-font);
     font-size: var(--text-large);
+
   }
   
   .contactanosNomEmail {
@@ -121,4 +124,70 @@
     margin-right: auto;
     margin-bottom: 2rem;
   }
+
+/*  .contactanosMotivoPais{
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--spacing40);
+    gap: 2rem;
+    width: 70%;
+  }
+  */
+
+  .motivos{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--spacing24);
+    padding-top:var(--spacing16);
+  }
+
+
+  .contactanosMotivo p{  
+    font-size: var(--heading6);
+    font-weight: 700;
+  }
+
+  .motivo-grupo{
+    display: flex;
+    align-items:center;
+    gap:var(--spacing8);
+  }
+
+  .contactanosMotivo label{
+    font-size: var(--heading6);
+  }
+
   
+  .contactanosPais p{
+    font-size: var(--heading6);
+    font-weight: 700;
+    padding-bottom: var(--spacing16);
+  }
+
+
+  .styled-select select{
+    font-size: var(--heading6);
+    font-family: var(--base-font);
+    padding: var(--spacing10);
+    border:none;
+    border-radius: 0.5rem;
+  
+  }
+
+  .errorContacto{
+    background-color: var(--dark-red);
+    margin-top:var(--spacing36);
+    padding: var(--spacing16);
+    text-align: center;
+    color:var(--ultralight-red);
+    font-size: var(--heading6);
+    /* font-weight: 700; */
+    display:none;
+  }
+
+
+  .errorContacto.visible{
+    display:block;
+  }
+

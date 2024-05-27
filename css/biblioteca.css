@@ -100,11 +100,7 @@
     height: var(--text-medium);
   }
   
-/*   .formatoChecks>div{
-    display: flex;
-    flex-wrap: no-wrap;
-  } */
-  
+
   
   .biblioteca{
     margin-left:auto;
@@ -130,7 +126,7 @@
   }
   
   .bibliotecaGrilla picture {
-    width:10vw;
+    width:15vw;
     
   }
   

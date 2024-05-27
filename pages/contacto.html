@@ -40,12 +40,6 @@
       <section class="contactanosPage">
         <div class="contactanosContent container">
           <h2 class="contactanosTitulo">Contactanos</h2>
-          <picture class="contactanos_imagen">
-            <img
-              src="../img/animales/Animales_Puma1.png"
-              alt=""
-            />
-          </picture>
           <p class="contactanosBajada">
             Nos encantaría escuchar tus sugerencias y comentarios.
           </p>
@@ -54,29 +48,67 @@
             tierradehistorias@mail.com
           </p>
           <div class="contactanosForm">
-            <form
-              action=""
-              method="post"
-              enctype="text/plain"
-            >
+            <form action="" method="post" enctype="text/plain" id="formContacto">
               <div class="contactanosCampos">
                 <div class="contactanosNomEmail">
                   <div class="contactanosNombre">
                     <label for="fnombre">Nombre</label>
-                    <input type="text" name="fnombre" id="fnombre" required="required"/>
+                    <input type="text" name="fnombre" id="fnombre" />
                   </div>
                   <div class="contactanosEmail">
                     <label for="femail">E-mail</label>
-                    <input type="text" name="femail" id="femail" required="required"/>
+                    <input type="email" name="femail" id="femail" />
                   </div>
                 </div>
                 <div class="contactanosMensaje">
                   <label for="fmensaje">Mensaje</label>
-                  <textarea name="mensaje" rows="10" id="fmensaje" required="required"></textarea>
+                  <textarea name="mensaje" rows="10" id="fmensaje"></textarea>
                 </div>
               </div>
+              <div class="contactanosMotivoPais">
+  
+                <div class="contactanosMotivo">
+                  <p>Motivo de Contacto</p>
+                  <div class="motivos">
+                    <div class="motivo-grupo">
+                      <input type="radio" id="informacion" name="motivos" value="informacion">
+                      <label for="informacion">Información</label>
+                    </div>
+                    <div class="motivo-grupo">
+                      <input type="radio" id="soporte" name="motivos" value="soporte">
+                      <label for="soporte">Soporte técnico</label>
+                    </div>
+                    <div class="motivo-grupo">
+                      <input type="radio" id="sugerencia" name="motivos" value="sugerencia">
+                      <label for="sugerencia">Sugerencias</label>
+                    </div>
+                    <div class="motivo-grupo">
+                      <input type="radio" id="otro" name="motivos" value="otro">
+                      <label for="otro">Otro</label>
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="contactanosPais">
+                  <p>Pais de residencia</p>
+                  <div class="styled-select">
+                    <select name="paises" id="paises" class="paises">
+                      <option value="argentina">Argentina</option>
+                      <option value="chile">Chile</option>
+                      <option value="brasil">Brasil</option>
+                      <option value="espana">España</option>
+                      <option value="mexico">México</option>
+                      <option value="otro">Otro</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="errorContacto" id="errorContacto">
+                Por favor, completar todos los campos antes de enviar.
+              </div>
+  
               <div class="contactanosEnviar">
-                <input type="submit" value="Enviar"/>
+                <input type="submit" value="Enviar" />
               </div>
             </form>
           </div>
@@ -121,5 +153,7 @@
     </footer>
 
     <script src="../js/index.js"></script>
+    <script src="../js/contacto.js"></script>
+    
   </body>
 </html>

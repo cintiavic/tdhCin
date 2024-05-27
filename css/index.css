@@ -42,7 +42,7 @@
 }
 
 .header_navbar {
-  padding: 20px 0px 0px 0px;
+ /*  padding: 20px 0px 0px 0px; */
   position: relative;
   top: 0;
   z-index: 2;
@@ -58,7 +58,7 @@
 .navbar_links {
   display: flex;
   justify-content: space-between;
-  font-size: var(--text-large);
+  font-size: var(--text-xlarge);
   font-weight: 700;
   text-align: center;
 }
@@ -442,6 +442,11 @@ footer {
   html {
     font-size: 10px;
   }
+
+  .bibliotecaGrilla picture {
+    width:20vw;
+    
+  }
   
 
 .formatoChecks{
@@ -544,6 +549,11 @@ footer {
 
 } */
 
+.bibliotecaGrilla picture {
+  width:20vw;
+  
+}
+
 }
 @media screen and (max-width: 480px) {
   html {
@@ -611,6 +621,11 @@ footer {
     padding-left:4rem;
     padding-right:4rem;
   }
+
+  .bibliotecaGrilla picture {
+    width:30vw;
+    
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -622,6 +637,10 @@ footer {
   }
   .slider .prev {
     left: 2rem;
+  }
+  .bibliotecaGrilla picture {
+    width:50vw;
+    
   }
 }
 
