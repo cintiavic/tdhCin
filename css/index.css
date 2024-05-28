@@ -26,23 +26,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:2rem;
-  
+  padding: 2rem;
 }
 
-.header_container2{
- background-image: url("../img/headerfooter/header_nube_completo-07.png");
- background-size: cover;
+.header_container2 {
+  background-image: url("../img/headerfooter/hf_fondoheadernube.png");
+  background-size: cover;
+  background-repeat: repeat-x;
   /*  margin-bottom:var(--spacing128); */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:2rem;
-  
+  padding: 2rem;
 }
 
 .header_navbar {
- /*  padding: 20px 0px 0px 0px; */
+  /*  padding: 20px 0px 0px 0px; */
   position: relative;
   top: 0;
   z-index: 2;
@@ -82,6 +81,7 @@
   padding: 10px 20px 10px 20px;
   border-radius: 15px;
   transition: background-color 0.3s ease;
+  margin-left: var(--spacing24);
 }
 
 .navbar_button:hover {
@@ -93,16 +93,16 @@
   position: absolute;
 }
 
-.abrir_menu{
-  display:none;
+.abrir_menu {
+  display: none;
   background-color: transparent;
-  margin-left:4rem;
+  margin-left: 4rem;
 }
 
-.cerrar_menu{
-  display:none;
-  background-color:transparent;
-  margin-right:1.5rem;
+.cerrar_menu {
+  display: none;
+  background-color: transparent;
+  margin-right: 1.5rem;
 }
 
 .mingcute--menu-fill {
@@ -125,21 +125,19 @@
 
 footer {
   position: relative;
-  width: 100vw;
-  
-  bottom:0;
+
+  bottom: 0;
 }
 
 .footer {
   background-color: var(--aqua);
   padding: var(--spacing36) 0 var(--spacing36) 0;
-  
 }
 
 .footer_container {
   display: flex;
   justify-content: space-around;
-  align-items:start;
+  align-items: start;
   /*  margin: 0 auto; */
 }
 
@@ -147,23 +145,21 @@ footer {
   width: 15vw;
 }
 
-
-
 .footer_menu > p,
 .footer_rrss > p {
-  font-size: var(--heading5);
+  font-size: var(--heading6);
   font-weight: bolder;
   margin-bottom: 1rem;
 }
 
-.footer_links{
-  display:flex;
+.footer_links {
+  display: flex;
   flex-direction: column;
 }
 
 .footer_links li a {
   font-size: var(--heading6);
-  line-height:var(--heading3);
+  line-height: var(--heading3);
 }
 .footer_rrss_iconos {
   display: flex;
@@ -219,7 +215,7 @@ footer {
   background-image: url("../img/misc/fondo_banner-06.png");
   background-size: cover;
   background-repeat: no-repeat;
- /*  width: 100vw; */
+  /*  width: 100vw; */
   background-color: var(--aqua);
   display: flex;
   justify-content: space-between;
@@ -414,6 +410,64 @@ footer {
 
 /*MEDIA QUERIES*/
 
+@media screen and (min-width: 1400px) {
+  html {
+    font-size: 18px;
+  }
+  .header_container2 {
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+
+  .footer_menu > p,
+  .footer_rrss > p {
+    font-size: var(--heading6);
+    }
+   
+    .footer_links li a {
+      font-size: var(--text-xlarge);
+    }
+
+    .footer_rrss_iconos {
+            font-size: var(--heading5);
+    }
+
+    .footer > p {
+      font-size: var(--text-large);
+      
+    }
+
+  .datos_titulo{
+    font-family: var(--headings-font);
+    font-size:var(--heading4);
+  }
+  
+  .datos_autor{
+    font-size:var(--heading6);
+    margin-bottom:var(--spacing16);
+  }
+  
+  .datos_descripcion{
+    font-size:var(--text-xlarge);
+    margin-bottom:var(--spacing16);
+  }
+  
+
+  .atributos p{
+    font-size:var(--text-xlarge);
+  }
+   
+  .botonDescargar{
+ 
+    font-size:var(--heading6);
+
+  }
+  
+
+
+
+}
+
 @media screen and (max-width: 1200px) {
   .bannerContenido {
     padding-left: var(--spacing48);
@@ -444,116 +498,110 @@ footer {
   }
 
   .bibliotecaGrilla picture {
-    width:20vw;
-    
+    width: 20vw;
   }
-  
 
-.formatoChecks{
-  display:flex;
-  flex-direction: column;
-  align-items: start;
-}
+  .formatoChecks {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 
-.formatoChecks div{
-  display:flex;
-  align-items:baseline;
-}
+  .formatoChecks div {
+    display: flex;
+    align-items: baseline;
+  }
 
-.nivelLecturaChecks div{
-  padding: var(--spacing8);
-}
+  .nivelLecturaChecks div {
+    padding: var(--spacing8);
+  }
 
-.biblioFilters p, .biblioFilters label, .biblioFilters select{
-  font-size:var(--heading6);
-}
+  .biblioFilters p,
+  .biblioFilters label,
+  .biblioFilters select {
+    font-size: var(--heading6);
+  }
 
-.nivelLecturaChecks input,
-.formatoChecks input
-{
-  height:var(--heading6);
-}
+  .nivelLecturaChecks input,
+  .formatoChecks input {
+    height: var(--heading6);
+  }
 
-#searchInput{
-  font-size:var(--heading6);
-}
-
-
+  #searchInput {
+    font-size: var(--heading6);
+  }
 }
 
 @media screen and (max-width: 640px) {
   html {
     font-size: 8px;
   }
-  .abrir_menu{
-    display:block;
+  .abrir_menu {
+    display: block;
   }
-  .cerrar_menu{
-    display:block;
+  .cerrar_menu {
+    display: block;
   }
-/*   .header_container{
+  /*   .header_container{
     justify-content: center;
     
   }
   */
-  .navbar_logo{
-    width:15vw;
-  
+  .navbar_logo {
+    width: 15vw;
   }
-  .header_navbar{
-    opacity:0;
-    visibility:hidden;
-    position:absolute;
-    padding:1.5rem;
-    top:0;
-    right:0;
-    margin:0;
-    bottom:0;
-    background-color:var(--light-red);
-    display:flex;
+  .header_navbar {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding: 1.5rem;
+    top: 0;
+    right: 0;
+    margin: 0;
+    bottom: 0;
+    background-color: var(--light-red);
+    display: flex;
     flex-direction: column;
-    align-items:end;
-    justify-content:flex-start;
-    gap:2rem;
-    box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
-    z-index:20;
+    align-items: end;
+    justify-content: flex-start;
+    gap: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    z-index: 20;
   }
 
-  .header_navbar.visible{
-    opacity:1;
+  .header_navbar.visible {
+    opacity: 1;
     visibility: visible;
   }
 
-  .navbar_button{
-    margin-right:1.5rem;
-    font-size:var(--heading4);
+  .navbar_button {
+    margin-right: 1.5rem;
+    font-size: var(--heading4);
   }
 
-  .navbar_links{
-    flex-direction:column;
-    align-items:end;
+  .navbar_links {
+    flex-direction: column;
+    align-items: end;
   }
 
-  .navbar_links li{
-    font-size:var(--heading4);
+  .navbar_links li {
+    font-size: var(--heading4);
   }
 
-.footer_logo img{
-  width:20vw;
-}
+  .footer_logo img {
+    width: 20vw;
+  }
 
-/* .formato, .nivelLectura{
+  /* .formato, .nivelLectura{
   
   flex-direction: column;
   align-items: start;
 
 } */
 
-.bibliotecaGrilla picture {
-  width:20vw;
-  
-}
-
+  .bibliotecaGrilla picture {
+    width: 20vw;
+  }
 }
 @media screen and (max-width: 480px) {
   html {
@@ -582,71 +630,69 @@ footer {
   .conoceTitulo {
     font-size: var(--heading3);
   }
-  .librosSliderTitulo{
+  .librosSliderTitulo {
     align-self: center;
-    text-align:center;
-/*     width:100%; */
+    text-align: center;
+    /*     width:100%; */
   }
   .formBusqueda input {
-    
     font-size: var(--heading5);
     width: 80vw;
   }
 
-  .contactanosCampos label{
-    font-size:var(--heading5);
+  .contactanosCampos label {
+    font-size: var(--heading5);
   }
 
-  .contactanosNomEmail{
-    flex-direction:column;
+  .contactanosNomEmail {
+    flex-direction: column;
     align-items: center;
-  
   }
-  .contactanosNombre, .contactanosEmail{
-    width:100%;
+  .contactanosNombre,
+  .contactanosEmail {
+    width: 100%;
   }
-  .contactanosNombre #fnombre{
-    font-size:var(--heading5);
-  }
-  .contactanosEmail #femail{
-    font-size:var(--heading5);
-  }
-  .contactanosMensaje #fmensaje{
-    font-size:var(--heading5);
-  }
-
-  .contactanosMotivo p{
-    font-size:var(--heading5);
-  }
-
-  .contactanosMotivo label{
-    font-size:var(--heading5);
-    text-align:center;
-  }
-
-  .styled-select select{
+  .contactanosNombre #fnombre {
     font-size: var(--heading5);
   }
-  
-  .paises option{
-    font-size:var(--heading5);
+  .contactanosEmail #femail {
+    font-size: var(--heading5);
   }
-
-  .contactanosPais p{
+  .contactanosMensaje #fmensaje {
     font-size: var(--heading5);
   }
 
-  .contactanosEnviar input{
-    font-size:var(--heading5);
+  .contactanosMotivo p {
+    font-size: var(--heading5);
   }
-  .contactanosEnviar input{
-    padding-left:4rem;
-    padding-right:4rem;
+
+  .contactanosMotivo label {
+    font-size: var(--heading5);
+    text-align: center;
+  }
+
+  .styled-select select {
+    font-size: var(--heading5);
+  }
+
+  .paises option {
+    font-size: var(--heading5);
+  }
+
+  .contactanosPais p {
+    font-size: var(--heading5);
+  }
+
+  .contactanosEnviar input {
+    font-size: var(--heading5);
+  }
+  .contactanosEnviar input {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .bibliotecaGrilla picture {
-    width:30vw;
-    
+    width: 30vw;
   }
 }
 
@@ -661,8 +707,6 @@ footer {
     left: 2rem;
   }
   .bibliotecaGrilla picture {
-    width:50vw;
-    
+    width: 50vw;
   }
 }
-
