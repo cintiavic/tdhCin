@@ -603,6 +603,7 @@ footer {
     width: 20vw;
   }
 }
+
 @media screen and (max-width: 480px) {
   html {
     font-size: 8px;
@@ -611,6 +612,7 @@ footer {
   .bannerTucan {
     max-width: 40%;
   }
+
   .bannerContenido {
     padding-left: var(--spacing10);
     padding-bottom: var(--spacing24);
